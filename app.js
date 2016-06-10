@@ -2,7 +2,13 @@ var app = angular.module('flapperNews', ['ui.router']);
 
 app.factory('posts', [function() {
 	var o = {
-		posts: []
+		posts: [
+			{title: 'Post 1', upvotes: 5},
+			{title: 'Post 2', upvotes: 2},
+			{title: 'Post 3', upvotes: 1},
+			{title: 'Post 4', upvotes: 9},
+			{title: 'Post 5', upvotes: 4},
+		]
 	};
 	return o;
 }]);
